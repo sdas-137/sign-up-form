@@ -21,9 +21,11 @@
 
 /* Main styling */
 
+
 * {
-    border: 1px solid red; /* Helps me in positioning */
+    /*border: 1px solid red; */ /* Helps me in positioning */
 }
+
 
 body {
     min-height: 100vh;
@@ -33,7 +35,7 @@ body {
 .top-container {
     min-height: 100vh;
     display: flex;
-    background-color: #F6F6F6;
+    background-color: #F2F2F2;
 }
 
 
@@ -86,7 +88,7 @@ body {
 }
 
 .main-container > div,
-.main-container > form,
+form > div,
 .main-container > p {
     padding-left: 24px;
 }
@@ -96,4 +98,47 @@ body {
     padding-right: 15%;
     padding-bottom: 50px;
     font-weight: bold;
+}
+
+/* Main form section */
+
+.form-main-section {
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 6px #888888;
+    padding-top: 16px;
+    padding-bottom: 36px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-main-section > h2 {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    margin-right: 36px;
+}
+
+.linebreaker {
+    width: 100%;
+}
+
+label {
+    font-size: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 0.06rem;
+    color: #555555;
+}
+
+input {
+    border: 1px solid #C6C6C6;
+    border-radius: 2px;
+}
+
+.form-submit-section {
+    padding-top: 28px;
 }
