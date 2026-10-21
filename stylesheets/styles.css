@@ -18,21 +18,26 @@
     font-display: swap;
 }
 
+
 /* Main styling */
 
 * {
     border: 1px solid red; /* Helps me in positioning */
 }
 
-body,
-.top-container {
+body {
     min-height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .top-container {
+    min-height: 100vh;
     display: flex;
     background-color: #F6F6F6;
 }
+
+
+/* Side panel */
 
 .side-container {
     background-image: url("../images/halie-west-25xggax4bSA-unsplash.jpg");
@@ -64,7 +69,6 @@ body,
 }
 
 .credits {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #F0F0F0;
     font-size: 0.7rem;
     text-align: center;
@@ -75,6 +79,21 @@ body,
     color: inherit;
 }
 
+/* Main panel */
+
 .main-container {
     width: 100%;
+}
+
+.main-container > div,
+.main-container > form,
+.main-container > p {
+    padding-left: 24px;
+}
+
+.info-section {
+    padding-top: 90px;
+    padding-right: 15%;
+    padding-bottom: 50px;
+    font-weight: bold;
 }
