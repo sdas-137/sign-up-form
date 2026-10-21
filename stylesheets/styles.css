@@ -17,3 +17,38 @@
     font-style: normal;
     font-display: swap;
 }
+
+/* Main styling */
+
+* {
+    border: 1px solid red; /* Helps me in positioning */
+}
+
+body,
+.top-container {
+    min-height: 100vh;
+}
+
+.top-container {
+    display: flex;
+    background-color: #F6F6F6;
+}
+
+.side-container {
+    flex-shrink: 2;
+    background-image: url("../images/halie-west-25xggax4bSA-unsplash.jpg");
+    background-size: cover;
+}
+
+.main-container {
+    width: 80%;
+}
+
+.logo-text {
+    width: fit-content;
+}
+
+#logo-image {
+    height: 10%;
+    width: 10%;
+}
